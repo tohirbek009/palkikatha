@@ -6,7 +6,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 <template>
   <div class="flex mt-3 relative">
     <div class="hidden flex-shrink-0 w-22 lg:w-26 bg-[#100738] md:flex flex-col items-center">
-      <img src="/src/assets/img/graphics/footer-flower.png" alt="" class="mb-12 -mt-3">
+      <img src="/assets/img/graphics/footer-flower.png" alt="" class="mb-12 -mt-3">
       <div class="flex flex-col items-center justify-between space-y-7 mb-4">
         <div class="text-grayLightest">Follow us</div>
         <RouterLink v-for="{ icon, to } in socialLinks" :key="icon" :to="to" class="text-white">

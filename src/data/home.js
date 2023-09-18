@@ -1,7 +1,7 @@
 export const advices = [
   {
     id: 1,
-    avatarImage: '/src/assets/img/avatar-1.png',
+    avatarImage: '/assets/img/avatar-1.png',
     userName: 'JENNY',
     time: '2d ago',
     title: "How to move on after your first break-up?",
@@ -11,7 +11,7 @@ export const advices = [
   },
   {
     id: 2,
-    avatarImage: '/src/assets/img/avatar-2.png',
+    avatarImage: '/assets/img/avatar-2.png',
     userName: 'JENNY',
     time: '4d ago',
     title: "How to build a strong and long-term relationship?",
@@ -31,7 +31,7 @@ export const advices = [
   },
   {
     id: 4,
-    avatarImage: '/src/assets/img/avatar-3.png',
+    avatarImage: '/assets/img/avatar-3.png',
     userName: 'Amit R.',
     time: '2d ago',
     title: "I am too shy to express my feelings to my partner?",
@@ -51,7 +51,7 @@ export const advices = [
   },
   {
     id: 7,
-    avatarImage: '/src/assets/img/avatar-4.png',
+    avatarImage: '/assets/img/avatar-4.png',
     userName: 'Vivek Das',
     time: '5d ago',
     title: "How to focus on  self-improvement?",
@@ -71,7 +71,7 @@ export const advices = [
   },
   {
     id: 9,
-    avatarImage: '/src/assets/img/avatar-1.png',
+    avatarImage: '/assets/img/avatar-1.png',
     userName: 'Vivek Das',
     time: '5d ago',
     title: "How to focus on  self-improvement?",
@@ -97,8 +97,8 @@ export const topStories = [
     id: 1,
     title: 'How to start your personal growth journey',
     description: 'A partner you get along with and who understands you brings tranquility of',
-    storyImgUrl: '/src/assets/img/top-story-1.png',
-    userImgUrl: '/src/assets/img/avatar-1.png',
+    storyImgUrl: '/assets/img/top-story-1.png',
+    userImgUrl: '/assets/img/avatar-1.png',
     userName: 'Manish Kumar',
     time: '4 MIN READ'
   },
@@ -106,8 +106,8 @@ export const topStories = [
     id: 2,
     title: '10 simple hacks to boost your personal growth',
     description: 'A partner you get along with and who understands you brings tranquility of. A partner you get along with and who understands you brings tranquility of',
-    storyImgUrl: '/src/assets/img/top-story-2.png',
-    userImgUrl: '/src/assets/img/avatar-2.png',
+    storyImgUrl: '/assets/img/top-story-2.png',
+    userImgUrl: '/assets/img/avatar-2.png',
     userName: 'Dr. R. Mittal',
     time: '4 MIN READ'
   },
@@ -115,8 +115,8 @@ export const topStories = [
     id: 3,
     title: 'Why it seems hard to move-on after first breakup',
     description: 'A partner you get along with and who.',
-    storyImgUrl: '/src/assets/img/top-story-3.png',
-    userImgUrl: '/src/assets/img/avatar-3.png',
+    storyImgUrl: '/assets/img/top-story-3.png',
+    userImgUrl: '/assets/img/avatar-3.png',
     userName: 'Samuel Peterson',
     time: '4 MIN READ'
   },
@@ -124,8 +124,8 @@ export const topStories = [
     id: 4,
     title: 'Does Dating Affect Your Mental Health?',
     description: 'A partner you get along with and who understands you brings tranquility of',
-    storyImgUrl: '/src/assets/img/top-story-4.png',
-    userImgUrl: '/src/assets/img/avatar-4.png',
+    storyImgUrl: '/assets/img/top-story-4.png',
+    userImgUrl: '/assets/img/avatar-4.png',
     userName: 'Manish Kumar',
     time: '4 MIN READ'
   },
@@ -134,8 +134,8 @@ export const topStories = [
     id: 5,
     title: 'Why it seems hard to move-on after first breakup',
     description: 'A partner you get along with and who.',
-    storyImgUrl: '/src/assets/img/top-story-3.png',
-    userImgUrl: '/src/assets/img/avatar-3.png',
+    storyImgUrl: '/assets/img/top-story-3.png',
+    userImgUrl: '/assets/img/avatar-3.png',
     userName: 'Samuel Peterson',
     time: '4 MIN READ'
   },
@@ -143,8 +143,8 @@ export const topStories = [
     id: 6,
     title: 'Does Dating Affect Your Mental Health?',
     description: 'A partner you get along with and who understands you brings tranquility of',
-    storyImgUrl: '/src/assets/img/top-story-4.png',
-    userImgUrl: '/src/assets/img/avatar-4.png',
+    storyImgUrl: '/assets/img/top-story-4.png',
+    userImgUrl: '/assets/img/avatar-4.png',
     userName: 'Manish Kumar',
     time: '4 MIN READ'
   }

@@ -45,7 +45,7 @@ const truncateCardTitle = computed(() => {
     </div>
     <div class="text-base font-taviraj mt-2 mb-2">{{ truncateCardTitle }}</div>
     <div class="flex items-center space-x-1.5 mb-3">
-      <img src="/src/assets/img/avatar-3.png" alt="" class="w-8 h-8 rounded-full border border-white">
+      <img src="/assets/img/avatar-3.png" alt="" class="w-8 h-8 rounded-full border border-white">
       <div class="flex flex-col">
         <div class="text-primary font-bold text-[10px]">Shruti Malhotra</div>
         <div class="flex items-center space-x-1">

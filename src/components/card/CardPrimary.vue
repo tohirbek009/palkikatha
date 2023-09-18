@@ -49,7 +49,7 @@ const bgColor = computed(() => {
 
     <!-- Avatar informations with smaller card version -->
     <div v-if="smallerVersion" class="flex flexw- items-center space-x-1 mb-6 mt-auto">
-      <img src="/src/assets/img/avatar-2.png" alt="image" class="w-7.5 h-7.5 rounded-full border-2 border-white" />
+      <img src="/assets/img/avatar-2.png" alt="image" class="w-7.5 h-7.5 rounded-full border-2 border-white" />
       <div class="text-primary font-bold text-sm">Shruti Malhotra</div>
       <div class="text-gray font-medium text-sm">(43 Solutions)</div>
       <BaseRating size="small" :value="4.5" has-background />
@@ -57,7 +57,7 @@ const bgColor = computed(() => {
 
     <!-- Avatar informations with default card version -->
     <div v-else class="flex flex-wrap items-center mt-7 mb-12">
-      <img src="/src/assets/img/top-story-3.png" alt="" class="w-14 h-14 md:w-18 md:h-18 rounded-full border-4 mr-2 md:mr-4 border-white">
+      <img src="/assets/img/top-story-3.png" alt="" class="w-14 h-14 md:w-18 md:h-18 rounded-full border-4 mr-2 md:mr-4 border-white">
 
       <div class="flex flex-col">
         <div class="text-gray text-xs md:text-sm"><span class="text-primary">43</span> Solutions</div>
@@ -83,7 +83,7 @@ const bgColor = computed(() => {
 
 <style scoped>
 .primary-card-wrapper {
-  background-image: url('/src/assets/img/graphics/primary-card-bg.png');
+  background-image: url('/assets/img/graphics/primary-card-bg.png');
   background-repeat: no-repeat;
   background-position: bottom right;
 }

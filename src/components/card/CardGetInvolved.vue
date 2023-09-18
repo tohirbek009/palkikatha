@@ -8,7 +8,7 @@
       <BaseButton text="Get Involved" color="primary" size="large" class="w-full sm:w-fit"/>
     </div>
     <div class="flex justify-center sm:justify-start">
-      <img src="/src/assets/img/graphics/chat.png" alt="" />
+      <img src="/assets/img/graphics/chat.png" alt="" />
     </div>
   </div>
 </template>

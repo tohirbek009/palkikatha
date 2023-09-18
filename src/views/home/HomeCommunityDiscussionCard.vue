@@ -9,16 +9,16 @@
       <BaseButton text="Join our community" color="primary" size="large" class="mt-7 md:mt-8 w-full"/>
     </div>
     <div class="relative flex items-end w-fit">
-      <img src="/src/assets/img/graphics/love-message-1.png" alt="image" class="absolute bottom-12 md:bottom-24 -right-8 md:left-6">
-      <img src="/src/assets/img/graphics/love-message-2.png" alt="image" class="absolute bottom-8 left-0">
-      <img src="/src/assets/img/community-discussion-card.png" alt="image" class="main-image rounded-2xl">
+      <img src="/assets/img/graphics/love-message-1.png" alt="image" class="absolute bottom-12 md:bottom-24 -right-8 md:left-6">
+      <img src="/assets/img/graphics/love-message-2.png" alt="image" class="absolute bottom-8 left-0">
+      <img src="/assets/img/community-discussion-card.png" alt="image" class="main-image rounded-2xl">
     </div>
   </div>
 </template>
 
 <style scoped>
 .card-wrapper {
-  background-image: url('/src/assets/img/graphics/ellipse-right.png');
+  background-image: url('/assets/img/graphics/ellipse-right.png');
   background-repeat: no-repeat;
   background-position: bottom right;
   overflow: hidden;
@@ -26,7 +26,7 @@
 
 @media (max-width: 820px) {
   .card-wrapper {
-    background-image: url('/src/assets/img/graphics/ellipse-center.png');
+    background-image: url('/assets/img/graphics/ellipse-center.png');
     background-position: bottom center;
   }
 

@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 
 const props = defineProps({
   bgColor: {
@@ -19,6 +19,14 @@ const bgColor = computed(() => {
 
   return colors[props.bgColor];
 });
+
+const activeTagId = ref(1);
+
+const chooseTag = (tagId) => {
+  activeTagId.value = tagId;
+}
+
+const tags = [ {id: 1, text: "Query"}, {id: 2, text: "Intimacy"}, {id: 3, text: "Relationship"}]
 </script>
 
 <template>
@@ -30,9 +38,14 @@ const bgColor = computed(() => {
     ]">
       <BaseAvatarInfo name="Anonymous" time="4 days ago" />
       <div :class="['flex space-x-2', { 'flex-wrap space-y-2 -ml-2 -mt-2': smallerVersion }]">
-        <BaseChip color="orange" text="Query" :class="['uppercase font-bold text-xs md:text-sm', { 'ml-2 mt-2': smallerVersion }]" />
-        <BaseChip text="Intimacy" class="uppercase font-bold text-xs md:text-sm" />
-        <BaseChip text="Relationship" class="uppercase font-bold text-xs md:text-sm" />
+        <BaseChip 
+          v-for="tag in tags"
+          :key="tag.id"
+          @click="chooseTag(tag.id)"
+          :color="tag.id === activeTagId ? 'orange' : 'default'" 
+          :text="tag.text" 
+          :class="['uppercase font-bold text-xs md:text-sm', { 'ml-2 mt-2': smallerVersion && tag.id === 1 }]"
+        />
       </div>
     </div>
 
@@ -49,7 +62,7 @@ const bgColor = computed(() => {
 
     <!-- Avatar informations with smaller card version -->
     <div v-if="smallerVersion" class="flex flexw- items-center space-x-1 mb-6 mt-auto">
-      <img src="/assets/img/avatar-2.png" alt="image" class="w-7.5 h-7.5 rounded-full border-2 border-white" />
+      <img src="/assets/img/avatar-2.png" alt="image" class="w-8 h-8 rounded-full border-2 border-white" />
       <div class="text-primary font-bold text-sm">Shruti Malhotra</div>
       <div class="text-gray font-medium text-sm">(43 Solutions)</div>
       <BaseRating size="small" :value="4.5" has-background />
@@ -66,9 +79,10 @@ const bgColor = computed(() => {
       </div>
 
       <div class="w-full md:w-fit mt-5 md:mt-0">
-        <div class="w-fit pb-px text-secondary font-bold border-b border-secondary cursor-pointer duration-300 hover:brightness-75 active:text-primary">
-          <span>Ask the Expert?</span>
-        </div>
+        <BaseLinkText
+          text="Ask the Expert?"
+          to="#"
+        />
       </div>
       
     </div>

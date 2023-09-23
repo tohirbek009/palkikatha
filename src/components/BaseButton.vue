@@ -93,7 +93,7 @@ const stylesBasedOnSize = computed(() => {
   <button
     :type="type"
     :class="[
-      `flex items-center justify-center text-base duration-300 hover:opacity-80 active:opacity-100 active:brightness-95 outline-none`,
+      `flex items-center justify-center text-base duration-300 hover:brightness-90 active:brightness-105 outline-none`,
       stylesBasedOnSize,
       bgColor,
       textColor

@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex items-center">
+  <div class="flex items-center text-sm md:text-2xl">
     <div class="mr-2.5">
       <img v-if="type === 'light'" src="/assets/icon/logo-icon-light.svg" alt="" class="w-8">
       <img v-else src="/assets/icon/logo-icon-dark.svg" alt="" class="w-8">

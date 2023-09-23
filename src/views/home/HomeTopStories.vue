@@ -1,25 +1,36 @@
 <script setup>
+import { ref } from 'vue';
+
 import { storiesFilterItems, topStories } from '../../data/home';
 import CardStory from '../../components/card/CardStory.vue';
+
+const activeFilterItem = ref(1);
+
+const chooseFilterItem = (filterItemId) => {
+  activeFilterItem.value = filterItemId;
+}
 </script>
 
 <template>
-  <div class="border border-grayLight rounded-2xl">
+  <div class="border border-[#E7E5EE] rounded-2xl">
     <div class="p-7">
       <div class="flex items-start justify-between mb-7">
         <div class="text-2xl md:text-3xl font-taviraj">
           Top Stories of the week
         </div>
-        <div class="hidden md:flex items-center pb-1 text-secondary font-bold border-b border-secondary cursor-pointer duration-300 hover:brightness-75 active:text-primary">
-          <span>View More</span>
-          <i class="icon-caret-right ml-1.5 text-sm"></i>
-        </div>
+        <BaseLinkText
+          rightIcon="icon-caret-right"
+          text="View More"
+          to="#"
+        />
       </div>
       <div class="flex flex-wrap space-x-3 space-y-3 -mt-3 -ml-3">
         <BaseChip
           v-for="item in storiesFilterItems"
           :key="item.id"
-          :text="item.text" 
+          :text="item.text"
+          :color="item.id === activeFilterItem ? 'primary' : 'default'"
+          @click="chooseFilterItem(item.id)"
           size="large"
           clickable
           class="first:mt-3 ml-3"

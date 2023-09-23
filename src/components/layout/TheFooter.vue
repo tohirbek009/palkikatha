@@ -36,7 +36,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
           </DisclosureButton>
           <DisclosurePanel class="text-white pt-2 pb-6">
             <div class="flex flex-col space-y-3">
-              <RouterLink v-for="{ name, to } in children" :key="name" :to="to">{{ name }}</RouterLink>
+              <RouterLink v-for="{ name, to } in children" :key="name" :to="to" class="no-underline hover:underline w-fit">{{ name }}</RouterLink>
             </div>
           </DisclosurePanel>
         </Disclosure>
@@ -58,14 +58,14 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
           </DisclosurePanel>
         </Disclosure>
       </div>
-      <div class="hidden md:grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 pb-10 px-8">
+      <div class="hidden md:grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 pb-20 px-8">
         <RouterLink to="/" class="hidden lg:flex">
           <BaseLogo type="dark" class="mb-auto" />
         </RouterLink>
         <div v-for="({ name, children }, index) in footerItems" :key="name" :class="[{ 'mt-6 md:mt-0': index !== 0 }]">
           <div class="font-bold uppercase text-gray">{{ name }}</div>
           <div class="flex flex-col space-y-3 mt-3 md:mt-6">
-            <RouterLink v-for="{ name, to } in children" :key="name" :to="to" class="text-white">
+            <RouterLink v-for="{ name, to } in children" :key="name" :to="to" class="text-white no-underline hover:underline w-fit">
               {{ name }}
             </RouterLink>
           </div>
@@ -75,7 +75,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
           <div class="flex flex-col space-y-4 md:space-y-3 mt-3 md:mt-6">
             <div class="text-sm text-white">Sign up for getting latest stories and article in your inbox</div>
             <input type="email" placeholder="E-mail"
-              class="border focus:border-2 border-gray outline-none bg-[#22174A] p-4 rounded-xl">
+              class="border focus:border-2 border-gray outline-none bg-[#22174A] p-4 rounded-xl text-white">
             <BaseButton text="Subscribe Now" color="secondary" size="large" class="w-fit" />
           </div>
         </div>
@@ -89,18 +89,18 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
           </RouterLink>
         </div>
         <div class="flex space-x-2 items-center justify-center text-white">
-          <a href="#">Terms & Contions</a>
+          <a href="#" class="no-underline hover:underline">Terms & Contions</a>
           <div class="w-0.5 h-3 bg-gray"></div>
-          <a href="#">Privacy Policy</a>
+          <a href="#" class="no-underline hover:underline">Privacy Policy</a>
         </div>
       </div>
 
       <div class="hidden md:flex justify-between border-t border-gray py-4 px-8">
         <div class="text-gray">2023 Palkikatha - All rights reserved</div>
         <div class="flex space-x-2 items-center text-white">
-          <a href="#">Terms & Contions</a>
+          <a href="#" class="no-underline hover:underline">Terms & Contions</a>
           <div class="w-0.5 h-3 bg-gray"></div>
-          <a href="#">Privacy Policy</a>
+          <a href="#" class="no-underline hover:underline">Privacy Policy</a>
         </div>
       </div>
     </div>

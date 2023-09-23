@@ -11,6 +11,7 @@ import BaseAvatarInfo from './components/BaseAvatarInfo.vue';
 import BaseLikeCommentCounter from './components/BaseLikeCommentCounter.vue';
 import BaseRating from './components/BaseRating.vue';
 import BaseChip from './components/BaseChip.vue';
+import BaseLinkText from './components/BaseLinkText.vue';
 
 const app = createApp(App);
 
@@ -21,5 +22,6 @@ app.component('BaseAvatarInfo', BaseAvatarInfo);
 app.component('BaseLikeCommentCounter', BaseLikeCommentCounter);
 app.component('BaseRating', BaseRating);
 app.component('BaseChip', BaseChip);
+app.component('BaseLinkText', BaseLinkText);
 
 app.mount('#app');

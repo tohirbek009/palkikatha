@@ -1,12 +1,12 @@
 <template>
-  <div class="search-container flex items-center justify-between rounded-xl h-12 pl-2 pr-4">
+  <div class="search-container flex items-center justify-between rounded-xl h-12 md:h-13 pl-2 pr-2">
     <BaseButton icon="icon-sliders" color="lightest" />
     <input 
       type="text"
       class="w-full h-full ml-3 border-1 border-red-200 outline-none placeholder:text-xs md:placeholder:text-sm"
       placeholder="Search for advices, stories & articles"
     />
-    <i class="icon-magnifying-glass text-secondary text-base md:text-xl"></i>
+    <BaseButton icon="icon-magnifying-glass" color="secondary" variant="text" />
   </div>
 </template>
 

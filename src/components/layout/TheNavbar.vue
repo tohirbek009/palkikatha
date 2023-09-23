@@ -26,11 +26,11 @@ const toggleMenu = () => {
       </div>
 
       <div
-        class="flex items-center flex-grow flex-wrap md:flex-nowrap h-full px-3 py-3 md:py-0 lg:px-6 md:border-b md:border-[#E3E3E3]">
+        class="flex items-center flex-grow flex-wrap md:flex-nowrap h-full px-3 py-5 md:py-0 lg:px-6 md:border-b md:border-[#E3E3E3]">
         <BaseButton icon="icon-menu-bars" color="primary" class="px-3 py-3 mr-4 md:hidden text-sm h-14" @click="toggleMenu"/>
 
         <RouterLink to="/">
-          <BaseLogo class="text-sm md:text-2xl" />
+          <BaseLogo />
         </RouterLink>
 
         <div class="flex-grow ml-3 mr-3 lg:ml-6 hidden md:block">

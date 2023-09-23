@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col p-4 border border-light rounded-xl md:border-0">
+  <div class="flex flex-col p-2 md:p-4 border border-light rounded-xl md:border-0">
     <div class="flex items-center justify-between">
       <BaseAvatarInfo :avatarImage="avatarImage" :name="userName" :time="time" size="small" class="text-[8px] md:text-xs"/>
       <div class="hidden md:flex">
@@ -23,8 +23,8 @@ const props = defineProps({
 
     <div class="mt-auto">
       <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-1 text-[8px] md:text-xs">
-          <div class="w-5 h-5 rounded-full flex items-center justify-center bg-grayLightest">
+        <div class="flex items-center space-x-1 text-[10px] md:text-sm">
+          <div class="w-6 h-6 rounded-full flex items-center justify-center bg-grayLightest">
             <i class="icon-lightbulb-filament"></i>
           </div>
           <div><span>{{ solutionsCount }}</span> <span class="text-gray">Solutions</span></div>

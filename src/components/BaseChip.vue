@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 
 const props = defineProps({
   text: String,
@@ -13,7 +13,7 @@ const props = defineProps({
   },
   outlined: Boolean,
   clickable: Boolean
-})
+});
 
 const textBgColors = computed(() => {
   if (props.color === 'default') {
@@ -43,22 +43,15 @@ const sizing = computed(() => {
     case 'medium': return 'px-3 h-7.5 text-sm';
     case 'large': return 'px-3.5 h-9 text-base'
   }
-})
-
-const cursor = computed(() => {
-  if (props.clickable) {
-    return 'duration-300 hover:opacity-80 active:opacity-100 active:brightness-95 cursor-pointer';
-  } else return "";
-})
+});
 </script>
 
 <template>
   <div 
     :class="[
-      'flex items-center w-fit text-center rounded-full', 
+      'flex items-center w-fit text-center rounded-full duration-300 hover:brightness-90 active:brightness-105 cursor-pointer select-none', 
       textBgColors, 
       sizing,
-      cursor
     ]">
     {{ text }}
   </div>

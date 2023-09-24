@@ -13,6 +13,8 @@ import CardGetInvolved from '../../components/card/CardGetInvolved.vue'
 
 <template>
   <div class="flex flex-col">
+
+    <!-- Mobile Desgin: -->
     <div class="md:hidden">
       <HomeCardSwiper />
       <div class="grid grid-cols-2 gap-2 my-5">
@@ -34,7 +36,8 @@ import CardGetInvolved from '../../components/card/CardGetInvolved.vue'
       <BaseButton text="View More Advices" size="large" color="secondary" class="w-full"/>
     </div>
     
-    <div class="flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
+
+    <div class="flex flex-col space-y-4 xl:flex-row xl:space-x-6 xl:space-y-0">
       <!-- Left Side (Cards) -->
       <div class="hidden md:grid grid-cols-2 gap-4 w-full xl:w-[55%] 2xl:w-3/5">
         <CardPrimary class="col-span-2" />
@@ -68,10 +71,10 @@ import CardGetInvolved from '../../components/card/CardGetInvolved.vue'
       </div>
     </div>
 
-    <div class="flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0 md:mt-4">
+    <div class="flex flex-col space-y-4 xl:flex-row xl:space-x-6 xl:space-y-0 md:mt-6">
 
       <!-- Left Side (Community Discussion block) -->
-      <div class="hidden md:grid grid-cols-2 gap-4 w-full xl:w-[55%] 2xl:w-3/5">
+      <div class="hidden md:flex w-full xl:w-[55%] 2xl:w-3/5">
         <HomeCommunityDiscussionCard class="col-span-2"/>
       </div>
 
@@ -79,10 +82,10 @@ import CardGetInvolved from '../../components/card/CardGetInvolved.vue'
       <div class="w-full xl:w-[45%] 2xl:w-2/5">
 
         <!-- Community Discussion Card for Mobile responsive -->
-        <HomeCommunityDiscussionCard class="md:hidden"/>
+        <HomeCommunityDiscussionCard class="md:hidden mb-4"/>
       
         <!-- Break-up Stories Card -->
-        <div class="flex flex-col sm:flex-row py-8 px-6 bg-cardBgLight rounded-2xl h-fit mb-4">
+        <div class="flex flex-col sm:flex-row py-8 px-6 bg-cardBgLight rounded-2xl h-fit mb-4 md:mb-6">
           <div class="flex flex-col items-center sm:items-start w-full sm:w-1/2">
             <div class="font-taviraj text-2xl mb-2">Break-up Stories</div>
             <div class="text-gray text-sm font-bold text-center sm:text-start"><span class="text-black">More that 10,000</span> people already shared their story with Palkikatha</div>

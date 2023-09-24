@@ -60,22 +60,20 @@ const stylesBasedOnSize = computed(() => {
   let style, borderRadius;
   switch(props.size) {
     case 'small': {
-      style = "px-2 min-w-[28px] h-7";
+      style = props.icon ? "w-7 h-7" : "px-2 h-7";
+      style += " text-xs"
       borderRadius = "rounded";
       break;
     };
     case 'medium': {
-      style = "px-2.5 min-w-[36px] h-9";
+      style = props.icon ? "w-9 h-9" : "px-2.5 h-9";
+      style += " text-sm"
       borderRadius = "rounded-lg";
       break;
     };
     case 'large': {
-      style = "font-bold px-3 min-w-[52px] md:px-5 h-13";
-      borderRadius = "rounded-xl";
-      break;
-    };
-    case 'x-large': {
-      style = "px-6 h-13";
+      style = props.icon ? "w-13 h-13" : "font-bold px-3 md:px-5 h-13";
+      style += " text-base";
       borderRadius = "rounded-xl";
       break;
     };

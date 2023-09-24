@@ -13,7 +13,7 @@ import CardReadAdvice from '../../components/card/CardReadAdvice.vue';
       <BaseLinkText
         text="View More"
         rightIcon="icon-caret-right"
-        to="#"
+        class="hidden md:block"
       />
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 md:gap-3">

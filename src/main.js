@@ -12,6 +12,9 @@ import BaseLikeCommentCounter from './components/BaseLikeCommentCounter.vue';
 import BaseRating from './components/BaseRating.vue';
 import BaseChip from './components/BaseChip.vue';
 import BaseLinkText from './components/BaseLinkText.vue';
+// form
+import BaseSelect from './components/form/BaseSelect.vue';
+import BaseInput from './components/form/BaseInput.vue';
 
 const app = createApp(App);
 
@@ -23,5 +26,7 @@ app.component('BaseLikeCommentCounter', BaseLikeCommentCounter);
 app.component('BaseRating', BaseRating);
 app.component('BaseChip', BaseChip);
 app.component('BaseLinkText', BaseLinkText);
+app.component('BaseSelect', BaseSelect);
+app.component('BaseInput', BaseInput);
 
 app.mount('#app');

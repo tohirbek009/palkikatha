@@ -21,7 +21,7 @@ import TheFooter from './components/layout/TheFooter.vue';
     </div>
 
     <!-- Footer -->
-    <TheFooter class="z-100" />
+    <TheFooter />
   </div>
 </template>
 

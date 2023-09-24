@@ -4,7 +4,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 </script>
 
 <template>
-  <div class="flex mt-3 relative">
+  <div class="flex mt-3 z-20">
     <div class="hidden flex-shrink-0 w-22 lg:w-26 bg-[#100738] md:flex flex-col items-center">
       <img src="/assets/img/graphics/footer-flower.png" alt="" class="mb-12 -mt-3">
       <div class="flex flex-col items-center justify-between space-y-7 mb-4">

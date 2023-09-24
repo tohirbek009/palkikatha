@@ -11,8 +11,11 @@ const props = defineProps({
     type: String,
     default: 'medium'
   },
-  outlined: Boolean,
-  clickable: Boolean
+  rounded: {
+    type: String,
+    default: 'rounded-full'
+  },
+  outlined: Boolean
 });
 
 const textBgColors = computed(() => {
@@ -49,7 +52,8 @@ const sizing = computed(() => {
 <template>
   <div 
     :class="[
-      'flex items-center w-fit text-center rounded-full duration-300 hover:brightness-90 active:brightness-105 cursor-pointer select-none', 
+      'flex items-center w-fit text-center duration-300 hover:brightness-90 active:brightness-105 cursor-pointer select-none', 
+      rounded,
       textBgColors, 
       sizing,
     ]">

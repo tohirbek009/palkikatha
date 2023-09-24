@@ -12,7 +12,7 @@ const chooseFilterItem = (filterItemId) => {
 </script>
 
 <template>
-  <div class="border border-[#E7E5EE] rounded-2xl">
+  <div class="flex flex-col justify-between border border-[#E7E5EE] rounded-2xl h-full">
     <div class="p-7">
       <div class="flex items-start justify-between mb-7">
         <div class="text-2xl md:text-3xl font-taviraj">
@@ -21,7 +21,7 @@ const chooseFilterItem = (filterItemId) => {
         <BaseLinkText
           rightIcon="icon-caret-right"
           text="View More"
-          to="#"
+          class="hidden md:block"
         />
       </div>
       <div class="flex flex-wrap space-x-3 space-y-3 -mt-3 -ml-3">

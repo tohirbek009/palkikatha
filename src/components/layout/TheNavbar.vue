@@ -30,8 +30,8 @@ const openForgotPassDialog = () => {
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 w-full h-fit md:h-18 lg:h-22 z-30">
-    <div class="flex items-center h-full bg-white">
+  <div class="navbar fixed top-0 left-0 w-full h-fit md:h-18 lg:h-22 z-30">
+    <div class="flex items-center h-full">
       <div class="hidden md:flex items-center w-22 lg:w-26 h-full bg-primary cursor-pointer">
         <div class="icon-menu-bars text-2xl text-white mx-auto"></div>
       </div>
@@ -72,5 +72,9 @@ const openForgotPassDialog = () => {
   button {
     height: 40px !important;
   }
+}
+
+.navbar {
+  background-color: white !important;
 }
 </style>

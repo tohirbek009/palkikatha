@@ -79,13 +79,13 @@ import CardGetInvolved from '../../components/card/CardGetInvolved.vue'
       </div>
 
       <!-- Right Side (Break-up Stories, Get Involved) -->
-      <div class="w-full xl:w-[45%] 2xl:w-2/5">
+      <div class="flex flex-col w-full xl:w-[45%] 2xl:w-2/5">
 
         <!-- Community Discussion Card for Mobile responsive -->
         <HomeCommunityDiscussionCard class="md:hidden mb-4"/>
       
         <!-- Break-up Stories Card -->
-        <div class="flex flex-col sm:flex-row py-8 px-6 bg-cardBgLight rounded-2xl h-fit mb-4 md:mb-6">
+        <div class="flex-grow flex flex-col sm:flex-row py-8 px-6 bg-cardBgLight rounded-2xl mb-4 md:mb-6">
           <div class="flex flex-col items-center sm:items-start w-full sm:w-1/2">
             <div class="font-taviraj text-2xl mb-2">Break-up Stories</div>
             <div class="text-gray text-sm font-bold text-center sm:text-start"><span class="text-black">More that 10,000</span> people already shared their story with Palkikatha</div>

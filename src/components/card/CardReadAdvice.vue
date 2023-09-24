@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps({
   avatarImage: String,
+  cardImage: String,
   userName: String,
   time: String,
   cardTitle: String,
@@ -19,7 +20,12 @@ const props = defineProps({
         <BaseButton variant="text" icon="icon-share-network" color="primary"/>
       </div>
     </div>
-    <div class="font-taviraj text-base md:text-xl my-3">{{ cardTitle }}</div>
+
+    <div class="hidden md:block my-3">
+      <img :src="cardImage" alt="" class="h-fit w-full"/>
+    </div>
+
+    <div class="font-taviraj text-base md:text-xl my-3 md:mb-3 md:mt-0">{{ cardTitle }}</div>
 
     <div class="mt-auto">
       <div class="flex items-center justify-between">

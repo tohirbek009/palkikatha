@@ -2,6 +2,7 @@ export const advices = [
   {
     id: 1,
     avatarImage: '/assets/img/avatar-1.png',
+    cardImage: '/assets/img/read-advice-1.png',
     userName: 'JENNY',
     time: '2d ago',
     title: "How to move on after your first break-up?",
@@ -12,6 +13,7 @@ export const advices = [
   {
     id: 2,
     avatarImage: '/assets/img/avatar-2.png',
+    cardImage: '/assets/img/read-advice-3.png',
     userName: 'JENNY',
     time: '4d ago',
     title: "How to build a strong and long-term relationship?",
@@ -22,6 +24,7 @@ export const advices = [
   {
     id: 3,
     avatarImage: null,
+    cardImage: '/assets/img/read-advice-2.png',
     userName: 'Anonymous',
     time: '1m ago',
     title: "How to make effective and clear communication?",
@@ -32,6 +35,7 @@ export const advices = [
   {
     id: 4,
     avatarImage: '/assets/img/avatar-3.png',
+    cardImage: '/assets/img/read-advice-4.png',
     userName: 'Amit R.',
     time: '2d ago',
     title: "I am too shy to express my feelings to my partner?",
@@ -42,6 +46,7 @@ export const advices = [
   {
     id: 6,
     avatarImage: null,
+    cardImage: '/assets/img/read-advice-3.png',
     userName: 'Anonymous',
     time: '2m ago',
     title: "What are the key factors for a reltaionship?",
@@ -52,6 +57,7 @@ export const advices = [
   {
     id: 7,
     avatarImage: '/assets/img/avatar-4.png',
+    cardImage: '/assets/img/read-advice-2.png',
     userName: 'Vivek Das',
     time: '5d ago',
     title: "How to focus on  self-improvement?",
@@ -62,6 +68,7 @@ export const advices = [
   {
     id: 8,
     avatarImage: null,
+    cardImage: '/assets/img/read-advice-4.png',
     userName: 'Anonymous',
     time: '2m ago',
     title: "What are the key factors for a reltaionship?",
@@ -72,6 +79,7 @@ export const advices = [
   {
     id: 9,
     avatarImage: '/assets/img/avatar-1.png',
+    cardImage: '/assets/img/read-advice-1.png',
     userName: 'Vivek Das',
     time: '5d ago',
     title: "How to focus on  self-improvement?",

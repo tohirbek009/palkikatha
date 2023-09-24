@@ -64,7 +64,7 @@ const openForgotPassDialog = () => {
   <DialogSidebarMenu v-model:show="isOpenDialogSidebar" />
   <SignUpDialog v-model:show="isOpenDialogSignUp" @openLoginDialog="openLoginDialog"/>
   <LoginDialog v-model:show="isOpenDialogLogin" @openSignUpDialog="openSignUpDialog" @openForgotPassDialog="openForgotPassDialog"/>
-  <ForgotPasswordDialog v-model:show="isOpenDialogForgotPass"/>
+  <ForgotPasswordDialog v-model:show="isOpenDialogForgotPass" @openLoginDialog="openLoginDialog"/>
 </template>
 
 <style scoped>

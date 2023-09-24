@@ -17,9 +17,18 @@ import CardReadAdvice from '../../components/card/CardReadAdvice.vue';
       />
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 md:gap-3">
-      <CardReadAdvice v-for="advice in advices" :key="advice.id" :avatar-image="advice.avatarImage"
-        :user-name="advice.userName" :time="advice.time" :card-title="advice.title"
-        :solutions-count="advice.solutionsCount" :like-count="advice.likeCount" :comment-count="advice.components" />
+      <CardReadAdvice 
+        v-for="advice in advices" 
+        :key="advice.id" 
+        :avatar-image="advice.avatarImage"
+        :card-image="advice.cardImage"
+        :user-name="advice.userName" 
+        :time="advice.time" 
+        :card-title="advice.title"
+        :solutions-count="advice.solutionsCount" 
+        :like-count="advice.likeCount" 
+        :comment-count="advice.components" 
+      />
     </div>
     <BaseButton text="View More" color="secondary" size="large" variant="outlined" class="w-full md:hidden mt-3" />
   </div>

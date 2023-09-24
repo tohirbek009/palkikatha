@@ -6,13 +6,18 @@ const props = defineProps({
   show: Boolean
 });
 
-const emits = defineEmits(['update:show']);
+const emits = defineEmits(['openLoginDialog', 'update:show']);
 
 const open = ref(props.show);
 
 watch(props, () => {
   open.value = props.show;
 });
+
+const openLoginDialog = () => {
+  emits('openLoginDialog');
+  closeForgtoPassDialog();
+}
 
 const closeForgtoPassDialog = () => {
   open.value = false;

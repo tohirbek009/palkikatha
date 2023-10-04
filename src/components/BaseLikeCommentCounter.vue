@@ -20,6 +20,7 @@ const props = defineProps({
 const styleBasedOnSize = computed(() => {
   switch(props.size) {
     case 'large': return 'p-4 text-base h-13 space-x-3 rounded-xl';
+    case 'small': return 'p-0 text-xs h-3 space-x-[6px] rounded'
     default: return 'p-2 text-sm h-7 space-x-2 rounded-lg'
   }
 })

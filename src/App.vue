@@ -1,7 +1,19 @@
 <script setup>
+import { onMounted } from 'vue';
 import TheNavbar from './components/layout/TheNavbar.vue';
 import TheSidebar from './components/layout/TheSidebar.vue';
 import TheFooter from './components/layout/TheFooter.vue';
+
+import { useWindowSize } from './store/window-size';
+const windowSize = useWindowSize();
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+});
+
+const handleResize = () => {
+  windowSize.handleResize(window.innerWidth);
+};
 </script>
 
 <template>

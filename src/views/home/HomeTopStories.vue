@@ -12,7 +12,7 @@ const chooseFilterItem = (filterItemId) => {
 </script>
 
 <template>
-  <div class="flex flex-col justify-between border border-[#E7E5EE] rounded-2xl h-full">
+  <div class="flex flex-col justify-between border border-[#E7E5EE] rounded-2xl h-full relative">
     <div class="p-7">
       <div class="flex items-start justify-between mb-7">
         <div class="text-2xl md:text-3xl font-taviraj">
@@ -44,7 +44,7 @@ const chooseFilterItem = (filterItemId) => {
         />
       </div>
     </div>
-    <div class="flex flex-col space-y-4 px-3 md:px-7 h-[560px] overflow-auto">
+    <div class="flex-grow flex flex-col space-y-4 px-3 md:px-7 h-[560px] overflow-auto">
       <CardStory
         v-for="topStory in topStories"
         :key="topStory.id"

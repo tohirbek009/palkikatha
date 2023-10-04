@@ -56,7 +56,7 @@ const chooseTag = (tagId) => {
     <div class="flex items-center space-x-1.5 mb-3 mt-auto">
       <img src="/assets/img/avatar-3.png" alt="" class="w-8 h-8 rounded-full border border-white">
       <div class="flex flex-col">
-        <div class="text-primary font-bold text-xs">Shruti Malhotra</div>
+        <div class="text-primary font-bold text-[10px]">Shruti Malhotra</div>
         <div class="flex items-center space-x-1">
           <BaseRating size="small" :value="4.5" />
           <div class="text-gray text-[10px]">(43 Solutions)</div>
@@ -64,11 +64,11 @@ const chooseTag = (tagId) => {
       </div>
     </div>
     <div class="flex items-center justify-between">
-      <div class="flex">
-        <BaseButton variant="text" icon="icon-bookmark-plus" color="primary" size="small"/>
-        <BaseButton variant="text" icon="icon-share-network" color="primary" size="small"/>
+      <div class="flex space-x-1">
+        <BaseButton variant="outlined" icon="icon-bookmark-plus" color="primary" size="small"/>
+        <BaseButton variant="outlined" icon="icon-share-network" color="primary" size="small"/>
       </div>
-      <BaseLikeCommentCounter :like-count="32" :comment-count="40" bg-transparent class="px-0"/>
+      <BaseLikeCommentCounter :like-count="32" :comment-count="40" bg-transparent class="px-0" size="small"/>
     </div>
   </div>
 </template>

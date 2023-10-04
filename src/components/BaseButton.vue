@@ -41,7 +41,8 @@ const bgColor = computed(() => {
       primary: 'border-primary', secondary: 'border-secondary',
       light: 'border-light', lightest: 'border-lightest'
     }
-    return 'bg-transparent border hover:bg-grayLightest ' + borderColors[props.color]
+    const borderColor = props.icon ? 'border-grayLight' : borderColors[props.color];
+    return 'bg-transparent border hover:bg-grayLightest ' + borderColor;
   } else if(props.variant === "text") {
     return 'bg-transparent hover:bg-grayLightest'
   } 
@@ -62,7 +63,7 @@ const stylesBasedOnSize = computed(() => {
     case 'small': {
       style = props.icon ? "w-7 h-7" : "px-2 h-7";
       style += " text-xs"
-      borderRadius = "rounded";
+      borderRadius = "rounded-[6px]";
       break;
     };
     case 'medium': {

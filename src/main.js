@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 
 import './styles/style.css'
 import './styles/icon-config.css'
@@ -17,8 +18,10 @@ import BaseSelect from './components/form/BaseSelect.vue';
 import BaseInput from './components/form/BaseInput.vue';
 
 const app = createApp(App);
+const pinia = createPinia();
 
 app.use(router);
+app.use(pinia);
 app.component('BaseButton', BaseButton);
 app.component('BaseLogo', BaseLogo);
 app.component('BaseAvatarInfo', BaseAvatarInfo);

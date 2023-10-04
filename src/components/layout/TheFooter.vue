@@ -32,7 +32,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
             :class="open ? 'text-secondary' : 'text-white'"
           >
             <span>{{ name }}</span>
-            <i :class="open ? 'rotate-180 transform' : ''" class="icon-caret-up text-[8px]"></i>
+            <i :class="open ? 'rotate-0 transform' : 'rotate-180'" class="icon-caret-up text-[8px]"></i>
           </DisclosureButton>
           <DisclosurePanel class="text-white pt-2 pb-6">
             <div class="flex flex-col space-y-3">
@@ -46,7 +46,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
             :class="open ? 'text-secondary border-t border-b-0' : 'text-white border-t border-b'"
           >
             <span>newsletter</span>
-            <i :class="open ? 'rotate-180 transform' : ''" class="icon-caret-up text-[8px]"></i>
+            <i :class="open ? 'rotate-0 transform' : 'rotate-180'" class="icon-caret-up text-[8px]"></i>
           </DisclosureButton>
           <DisclosurePanel class="text-white py-3 border-b border-gray">
             <div class="flex flex-col space-y-4">

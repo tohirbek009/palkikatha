@@ -23,7 +23,7 @@ const currentPath = computed(() => {
           { 'border-r-secondary text-secondary': currentPath === item.to }
         ]"
       >
-        <i :class="[item.icon, { 'text-grayLight': currentPath !== item.to }, 'text-2xl mb-1 group-hover:text-secondary']"></i>
+        <i :class="[item.icon, { 'text-grayLight': currentPath !== item.to }, 'text-3xl mb-1 group-hover:text-secondary']"></i>
         <span class="group-hover:text-secondary">{{ item.name }}</span>
       </RouterLink>
     </nav>

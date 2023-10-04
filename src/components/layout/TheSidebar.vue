@@ -20,11 +20,11 @@ const currentPath = computed(() => {
         :class="[
           'flex flex-col justify-center items-center group w-full h-18 text-primary font-medium border-r-4 duration-300',
           { 'border-r-transparent': currentPath !== item.to },
-          { 'border-r-secondary text-secondary': currentPath === item.to }
+          { 'border-r-secondary': currentPath === item.to }
         ]"
       >
-        <i :class="[item.icon, { 'text-grayLight': currentPath !== item.to }, 'text-3xl mb-1 group-hover:text-secondary']"></i>
-        <span class="group-hover:text-secondary">{{ item.name }}</span>
+        <i :class="[item.icon, 'text-3xl mb-1']"></i>
+        <span class="text-[#544883]">{{ item.name }}</span>
       </RouterLink>
     </nav>
   </div>

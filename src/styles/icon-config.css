@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/assets/fonts/icons/icomoon.eot?nreof2');
-  src:  url('/assets/fonts/icons/icomoon.eot?nreof2#iefix') format('embedded-opentype'),
-    url('/assets/fonts/icons/icomoon.ttf?nreof2') format('truetype'),
-    url('/assets/fonts/icons/icomoon.woff?nreof2') format('woff'),
-    url('/assets/fonts/icons/icomoon.svg?nreof2#icomoon') format('svg');
+  src:  url('/assets/fonts/icons/icomoon.eot?oogjj');
+  src:  url('/assets/fonts/icons/icomoon.eot?oogjj#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icons/icomoon.ttf?oogjj') format('truetype'),
+    url('/assets/fonts/icons/icomoon.woff?oogjj') format('woff'),
+    url('/assets/fonts/icons/icomoon.svg?oogjj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-circle-question:before {
+  content: "\e90c";
+}
+.icon-bookmarks:before {
+  content: "\e90f";
+}
+.icon-lightbulb:before {
+  content: "\e910";
+}
+.icon-chat-circle-text:before {
+  content: "\e912";
+}
+.icon-house:before {
+  content: "\e913";
+}
 .icon-xmark:before {
   content: "\e900";
 }
@@ -61,29 +76,14 @@
 .icon-bookmark-plus:before {
   content: "\e90b";
 }
-.icon-bookmarks:before {
-  content: "\e90c";
-}
 .icon-caret-right:before {
   content: "\e90d";
 }
 .icon-chat-centered-text:before {
   content: "\e90e";
 }
-.icon-chat-circle-text:before {
-  content: "\e90f";
-}
-.icon-circle-question:before {
-  content: "\e910";
-}
 .icon-heart:before {
   content: "\e911";
-}
-.icon-house:before {
-  content: "\e912";
-}
-.icon-lightbulb:before {
-  content: "\e913";
 }
 .icon-lightbulb-filament:before {
   content: "\e914";

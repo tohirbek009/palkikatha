@@ -32,7 +32,7 @@ const openForgotPassDialog = () => {
 <template>
   <div class="fixed top-0 left-0 w-full md:h-18 lg:h-22 z-30 bg-white">
     <div class="flex items-center h-full">
-      <div class="hidden md:flex items-center w-22 lg:w-26 h-full bg-primary cursor-pointer">
+      <div class="hidden md:flex items-center w-22 lg:w-26 h-full bg-primary cursor-pointer" @click="openDialogSidebar">
         <i class="icon-menu-bars text-2xl text-white mx-auto"></i>
       </div>
 

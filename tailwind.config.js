@@ -39,15 +39,12 @@ export default {
       },
       borderRadius: {
         '2.5xl': '1.25rem'
-      }
+      },
+      screens: {
+        md: '840px',
+      },
     },
-    screens: {
-      sm: '480px',
-      md: '820px',
-      lg: '976px',
-      xl: '1280px',
-      '2xl': '1536px'
-    },
+   
     fontFamily: {
       sans: ['Mulish', 'sans-serif'],
       taviraj: ['Taviraj']

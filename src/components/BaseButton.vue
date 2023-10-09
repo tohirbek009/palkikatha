@@ -51,7 +51,9 @@ const bgColor = computed(() => {
       primary: 'bg-primary',
       secondary: 'bg-secondary',
       light: 'bg-light',
-      lightest: 'bg-lightest'
+      lightest: 'bg-lightest',
+      gray: 'bg-gray',
+      grayLight: 'bg-grayLight'
     };
     return colors[props.color];
   }

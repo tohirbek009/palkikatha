@@ -5,15 +5,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
 <template>
   <div class="flex mt-3 z-20">
-    <div class="hidden flex-shrink-0 w-22 lg:w-26 bg-[#100738] md:flex flex-col items-center">
-      <img src="/assets/img/graphics/footer-flower.png" alt="" class="mb-12 -mt-3">
-      <div class="flex flex-col items-center justify-between space-y-7 mb-4">
-        <div class="text-grayLightest">Follow us</div>
-        <RouterLink v-for="{ icon, to } in socialLinks" :key="icon" :to="to" class="text-white">
-          <i :class="['text-xl', icon]"></i>
-        </RouterLink>
-      </div>
-    </div>
     <div class="flex-grow bg-footerBgDark pt-5 lg:pt-10">
       <div class="flex flex-col items-center px-8 mb-5 lg:hidden">
         <RouterLink to="/">
@@ -96,6 +87,11 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
       </div>
 
       <div class="hidden md:flex justify-between border-t border-gray py-4 px-8">
+        <div class="flex space-x-5">
+          <RouterLink v-for="{ icon, to } in socialLinks" :key="icon" :to="to" class="text-white">
+            <i :class="['text-xl', icon]"></i>
+          </RouterLink>
+        </div>
         <div class="text-gray">2023 Palkikatha - All rights reserved</div>
         <div class="flex space-x-2 items-center text-white">
           <a href="#" class="no-underline hover:underline">Terms & Contions</a>

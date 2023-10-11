@@ -30,10 +30,10 @@ const handleResize = () => {
       <div class="px-4 py-3 md:p-6">
         <RouterView />
       </div>
-    </div>
 
-    <!-- Footer -->
-    <TheFooter />
+      <!-- Footer -->
+      <TheFooter />
+    </div>    
   </div>
 </template>
 

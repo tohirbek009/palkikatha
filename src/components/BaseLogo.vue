@@ -14,7 +14,7 @@ defineProps({
       <img v-else src="/assets/icon/logo-icon-dark.svg" alt="" class="w-8">
     </div>
     <div class="font-extrabold">
-      <span :class="[{ 'text-[#514A7D]': type === 'light', 'text-[#CFCDD8]': type === 'dark' }]">palki</span>
+      <span :class="[{ 'text-[#514A7D]': type === 'light', 'text-[#CFCDD8]': type === 'dark' }]">palkee</span>
       <span class="text-[#A09CB7]">katha</span>
     </div>
   </div>
